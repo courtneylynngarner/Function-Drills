@@ -220,7 +220,13 @@ console.log(capsLock(sampleString));
 */
 
 //CODE HERE
+function chocFrogs(gold) {
+  let numOfFrogs = 0 ;
+  return numOfFrogs = gold / 3 ;
+} 
 
+let totalFrogs = chocFrogs(10)
+console.log(totalFrogs)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -228,7 +234,14 @@ console.log(capsLock(sampleString));
 */
 
 //CODE HERE
+function chocFrogs2(gold) {
+  let numOfFrogs = 0 ;
+ numOfFrogs = gold / 3 ;
+ return Math.floor(numOfFrogs)
+} 
 
+totalFrogs = chocFrogs2(10)
+console.log(totalFrogs)
 
 ////////////////// PROBLEM 14 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -237,8 +250,17 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-
-
+function numbers(numArr){
+  for(let i = 0; i < numArr.length; i++) {
+    if ( numArr[i] < numArr[i+1]) {
+      return true
+    } else {
+      return false
+    }
+  } 
+}
+let arrayIsAscending = numbers(sampleArray);
+console.log(arrayIsAscending);
 ////////////////// PROBLEM 15 ////////////////////
 
 let duck = "cute";
@@ -261,13 +283,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = [`duck`]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = [`duck`, `rubberDuck`, `sailorDuck`]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = [`sailorDuck`]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = [`realDuck`]
